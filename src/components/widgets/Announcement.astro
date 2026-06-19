@@ -1,23 +1,13 @@
 ---
-
+import { getPermalink } from '~/utils/permalinks';
 ---
 
 <div
-  class="text-sm bg-slate-900 text-slate-300 dark:bg-transparent dark:border-b dark:border-slate-800 dark:text-slate-400 hidden md:flex gap-1 overflow-hidden px-3 py-2 relative text-ellipsis whitespace-nowrap"
+  class="hidden items-center justify-center gap-2 overflow-hidden whitespace-nowrap bg-[#2B2118] px-3 py-2 text-sm text-amber-50 md:flex"
 >
-  <span
-    class="bg-white/20 dark:bg-slate-700 text-slate-100 dark:text-slate-300 font-semibold px-1 py-0.5 text-xs mr-0.5 rtl:mr-0 rtl:ml-0.5 inline-block"
-    >NEW</span
+  <span class="mr-1 rounded bg-[#E8A33D] px-1.5 py-0.5 text-xs font-bold uppercase tracking-wide text-[#2B2118]"
+    >Friss</span
   >
-  <a href="https://astro.build/blog/astro-6/" class="text-slate-300 hover:underline dark:text-slate-400 font-medium"
-    >Astro v6 is now available! »</a
-  >
-  <a
-    target="_blank"
-    rel="noopener"
-    class="ltr:ml-auto rtl:mr-auto w-[5.6rem] h-[1.25rem] ml-auto bg-contain inline-block bg-[url(https://img.shields.io/github/stars/arthelokyo/astrowind.svg?style=social&label=Stars&maxAge=86400)]"
-    title="If you like AstroWind, give us a star."
-    href="https://github.com/arthelokyo/astrowind"
-  >
-  </a>
+  <span class="font-medium">Mindig frissen sütött lángos · Kedd–Péntek 9:00–18:00 · Mátyásföld, Újszász u. 87</span>
+  <a href={getPermalink('/#etlap')} class="ml-2 font-semibold text-amber-200 hover:underline">Megnézem az étlapot »</a>
 </div>
